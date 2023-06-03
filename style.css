@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: sans-serif;
+  background-color: #fbcfe8;
+  color: #a21caf;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.search {
+  width: 100%;
+  background-color: #fce7f3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 20px;
+}
+
+.search-box {
+  all: unset;
+  width: 100%;
+  height: 100%;
+}
+
+.search-btn {
+  all: unset;
+  cursor: pointer;
+}
+
+.search-btn .fa-search {
+  color: #000;
+}
+
+.location {
+  text-align: right;
+  margin: 20px 0;
+}
+
+.location .city {
+  font-size: 35px;
+}
+
+.temperature-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temperature-info {
+  display: flex;
+  align-items: center;
+}
+
+.content .temperature {
+  font-size: 30px;
+}
+
+.content .temperature .active {
+  color: blue;
+}
+
+.content .weather {
+  font-size: 20px;
+  text-transform: capitalize;
+
+  margin: 5px 0;
+}
+
+.date-section .day {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.date-section .weather-condition {
+  font-size: 18px;
+}
+
+.week {
+  font-size: 25px;
+  text-align: center;
+}
+
+.week-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+}
+
+.week-box {
+  width: 18%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+
+  padding: 20px;
+}
+
+.week-box .week-date {
+  text-align: right;
+}
+
+.week-box .week-date div {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.week-temperature .sunny-image {
+  width: 80px;
+  height: 80px;
+
+  margin: 10px 0;
+}
+
+.week-temperature .temp,
+.week-temperature .temp-weather {
+  margin: 10px 0;
+}
+
+.link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hmwe {
+  font-weight: 700;
+  font-size: 20px;
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .content .temperature {
+    font-size: 20px;
+  }
+
+  .content .weather {
+    font-size: 16px;
+  }
+
+  .date-section .day {
+    font-size: 20px;
+  }
+
+  .date-section .weather-condition {
+    font-size: 16px;
+  }
+
+  .week-group {
+    flex-direction: column;
+  }
+
+  .week-box {
+    width: 70%;
+    margin: 20px 0;
+  }
+}

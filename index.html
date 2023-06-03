@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" id="inputBox" class="search-box" placeholder="Enter city name..!" spellcheck="false">
+            <button id="form" class="search-btn"><i class="fa-solid fa-search fa-2x"></i></button>
+        </div>
+
+        <h2 class="location">Today/<span class="city"></span>
+        </h2>
+
+        <div class="temperature-container">
+            <div class="temperature-info">
+                <img src="./images/sun.png" alt="sunImage" class="sun-image">
+                <div class="content">
+                    <div class="temperature"><span id="value">23</span> <a href="#" id="celsius" class="active">°C</a> |
+                        <a href="#" id="fahrenheit">°F</a>
+                    </div>
+                    <div class="weather">Sunny</div>
+                </div>
+            </div>
+            <div class="date-section">
+                <div class="day">Saturday</div>
+                <div class="weather-condition">
+                    <div class="wind">Wind: 10 km/h</div>
+                    <div class="humidity">Humidity: 82%</div>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="week">Next Week</h3>
+
+        <div class="week-group" id="weather-forecast"></div>
+
+        <div class="link">
+            <a href="https://github.com/papahmwe/sheCodesPlusWeatherApp">Coding by <span
+                    class="hmwe">Hmwe</span>...!</a>
+        </div>
+    </div>
+    <script src="./node.js"></script>
+</body>
+
+</html>
